@@ -1,0 +1,19 @@
+require:
+  - rubocop-rspec
+  - rubocop-rake
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+AllCops:
+  NewCops: enable
+
