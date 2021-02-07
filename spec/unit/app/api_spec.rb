@@ -84,7 +84,10 @@ module ExpenseTracker
           expect(parsed).to contain_exactly(coffee, zoo)
         end
 
-        it 'responds with a 200 (OK)'
+        it 'responds with a 200 (OK)' do
+          get '/expenses/2017-06-12'
+          expect(last_response.status).to be(200)
+        end
       end
 
       context 'when there are no expenses on the given date' do
